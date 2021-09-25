@@ -36,7 +36,7 @@ public class MissionDemolition : MonoBehaviour
         S = this;
 
         level = 0;
-        levelMax = castle.Length;
+        levelMax = castles.Length;
         StartLevel();
     }
 
@@ -46,8 +46,13 @@ public class MissionDemolition : MonoBehaviour
             Destroy(castle);
         }
         
-        GameObject[] gos = 
-        castle = Instantiate<GameObject>(castles[level1]);
+        GameObject[] gos = GameObject.FindGameObjectsWithTag("Projectile");
+        foreach(GameObject pTemp in gos)
+        {
+            Destroy(pTemp);
+        }
+        
+        castle = Instantiate<GameObject>(castles[level]);
         castle.transform.position = castlePos;
         shotsTaken = 0;
 
@@ -116,5 +121,10 @@ public class MissionDemolition : MonoBehaviour
                 uitButton.text = "Show Slingshot";
                 break;
         }
+    }
+
+    public static void ShotFired()
+    {
+        S.shotsTaken++;
     }
 }
