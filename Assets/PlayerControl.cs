@@ -20,6 +20,21 @@ public class PlayerControl : MonoBehaviour
     public LayerMask groundMask;
     bool isGrounded;
 
+    private int count;
+    public int goal = 15;
+    public bool collectAll = false;
+
+    
+    private void OnTriggerEnter(Collider other)
+    {
+
+        if(other.gameObject.CompareTag("PickUp"))
+        {
+            other.gameObject.SetActive(false);
+            count++;
+        }
+    }
+    
     void Update()
     {
         isGrounded = Physics.CheckSphere(groundCheck.position, groundDistance, groundMask);
@@ -51,6 +66,11 @@ public class PlayerControl : MonoBehaviour
         }
         velocity.y += gravity * Time.deltaTime;
         controller.Move(velocity * Time.deltaTime);
-    }
 
+        if(count == goal)
+        {
+            collectAll = true;
+        }
+
+    }
 }
