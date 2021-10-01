@@ -6,7 +6,10 @@ public class Obstacles : MonoBehaviour
 {
     
     void OnCollisionEnter(Collision collision){
-        
+        if(collision.gameObject.tag == "Player")
+        {
+            
+        }
     }
     // Start is called before the first frame update
     void Start()
