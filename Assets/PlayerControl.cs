@@ -5,7 +5,6 @@ using UnityEngine;
 public class PlayerControl : MonoBehaviour
 {
 
-    //player movement
     public CharacterController controller;
     public Transform cam;
 
@@ -25,12 +24,10 @@ public class PlayerControl : MonoBehaviour
     {
         isGrounded = Physics.CheckSphere(groundCheck.position, groundDistance, groundMask);
 
-
         if(isGrounded && velocity.y < 0)
         {
             velocity.y = -2f;
         }
-
 
         //using w,a,s,d to 
         float horizontal = Input.GetAxisRaw("Horizontal");
@@ -53,7 +50,6 @@ public class PlayerControl : MonoBehaviour
         }
         velocity.y += gravity * Time.deltaTime;
         controller.Move(velocity * Time.deltaTime);
-
     }
 
 }
