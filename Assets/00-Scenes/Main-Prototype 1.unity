@@ -1936,7 +1936,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 525968119910149173, guid: dcb3c61c1d9c55a47891807d3b17d988, type: 3}
       propertyPath: m_LocalScale.x
-      value: 9.4445
+      value: 8.99258
       objectReference: {fileID: 0}
     - target: {fileID: 525968119910149173, guid: dcb3c61c1d9c55a47891807d3b17d988, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2489,7 +2489,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 792234105}
-  m_LocalRotation: {x: 0.2953978, y: 2.0633299e-10, z: -6.673213e-10, w: 0.95537436}
+  m_LocalRotation: {x: 0.2953978, y: 1.8376532e-10, z: -5.94333e-10, w: 0.95537436}
   m_LocalPosition: {x: -0.49, y: 8.8220005, z: -44.14}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -2701,7 +2701,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Next Level
+  m_Text: Back
 --- !u!222 &818738751
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2995,7 +2995,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 525968119910149173, guid: dcb3c61c1d9c55a47891807d3b17d988, type: 3}
       propertyPath: m_LocalScale.x
-      value: 9.4445
+      value: 8.649652
       objectReference: {fileID: 0}
     - target: {fileID: 525968119910149173, guid: dcb3c61c1d9c55a47891807d3b17d988, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4446,7 +4446,7 @@ GameObject:
   - component: {fileID: 1519575249}
   - component: {fileID: 1519575248}
   m_Layer: 5
-  m_Name: NextLevel Button
+  m_Name: BackToMenu Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4518,7 +4518,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 820277854}
         m_TargetAssemblyTypeName: ButtonFunctions, Assembly-CSharp
-        m_MethodName: NextLevel
+        m_MethodName: BackToMenu
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6626,7 +6626,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2144966813}
-  m_LocalRotation: {x: 0.25230902, y: -0.00057654583, z: 0.00015033144, w: 0.96764654}
+  m_LocalRotation: {x: 0.25230902, y: -0.00032808195, z: 0.00008554572, w: 0.96764666}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
