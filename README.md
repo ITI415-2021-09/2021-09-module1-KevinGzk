@@ -6,4 +6,4 @@ My prototype is inspired by roll-a-ball and the kind of game that makes you run 
 I initially want to more focus on the dynamic on how the level can have interaction with players. From this approach, I did some UI stuff to let player have more ideas what to do. But I think those things might not be that important in demo verson.
 
 Here is the link:
-https://iti415-2021-09.github.io/2021-09-module1-KevinGzk/Module%201%20build/
+[https://iti415-2021-09.github.io/2021-09-module1-KevinGzk/Module%201%20build/]
